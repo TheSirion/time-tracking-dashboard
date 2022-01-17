@@ -1,0 +1,81 @@
+.activity {
+  &-content {
+    padding: 1.2rem;
+    padding-top: 0.6rem;
+    background-color: inherit;
+    border-bottom-left-radius: $border-radius;
+    border-bottom-right-radius: $border-radius;
+    position: relative;
+
+    &:hover {
+      background-color: $primary-profile-card-background;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+
+    &::before {
+      content: "";
+      height: 1rem;
+      width: 100%;
+      background-color: inherit;
+      border-top-left-radius: $border-radius;
+      border-top-right-radius: $border-radius;
+      position: absolute;
+      left: 0;
+      top: -0.5rem;
+    }
+  }
+
+  &-header {
+    border-top-left-radius: $border-radius;
+    border-top-right-radius: $border-radius;
+    height: 2.5rem;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &-icon {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+
+  &-name {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.options:hover {
+  filter: invert(0%) sepia(100%) saturate(0%) hue-rotate(209deg)
+    brightness(101%) contrast(102%);
+  transition: all 0.2s ease;
+}
+
+.previous {
+  color: $primary-font;
+}
+
+.exercise {
+  background-color: $exercise;
+}
+
+.play {
+  background-color: $play;
+}
+
+.self-care {
+  background-color: $self-care;
+}
+
+.social {
+  background-color: $social;
+}
+
+.study {
+  background-color: $study;
+}
+
+.work {
+  background-color: $work;
+}

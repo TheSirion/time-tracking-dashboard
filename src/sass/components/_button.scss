@@ -1,0 +1,19 @@
+.btn {
+  text-align: start;
+  margin: 0.5rem;
+  color: $primary-font;
+  background-color: $secondary-background;
+  border: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: #fff;
+    transition: all 0.2s linear;
+    cursor: pointer;
+  }
+
+  &-active {
+    color: #fff;
+  }
+}
